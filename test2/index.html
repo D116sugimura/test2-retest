@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+    <style>
+        .contents{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: bisque;
+            width: 900px;
+            height: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .text{
+            background-color: rgb(248, 66, 66);
+            width: 900px;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        img{
+            width: 600px;
+            height: 400px;
+            text-align: center;
+           margin: 0 auto;
+        }
+        .img-box{
+            text-align: center;
+        }
+        .Form-Item{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        @media(max-width:767px){
+            .contents{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+<body>
+    <div class="contents">
+        <div class="box"></div>  
+        <div class="box"></div>    
+        <div class="box"></div>
+        <div class="box"></div>
+        <p>テキスト１</p><p>テキスト２</p><p>テキスト３</p><p>テキスト４</p>
+    </div>
+    <div class="text">文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー
+        文章ダミー文章ダミー文章ダミー文章ダミー
+    </div>
+        <div class="img-box"><img src="img/kapi.webp" alt="カピバラ"></div>
+    <main>
+        <div class="Form"></div>
+            <div class="Form-Item">
+                <p class="form-Item-Label">お名前：</p>
+                <input type="text" name="name" class="Form-Item-Input">
+            </div>
+            <div class="Form-Item">
+                <p class="form-Item-Label">返信を希望する方はチェックして下さい：</p>
+                <input type="checkbox">
+                <label for="checkbox"></label>
+            </div>
+            <div class="Form">
+                <p class="form-Item-Label">メッセージ：</p>
+                <textarea name="Form-Item-textarea" name="inquiry" cols="30" rows="10" required></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+    </main>
+</body>
+    
+</html>
